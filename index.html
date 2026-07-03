@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cibernet — Internet Fibra Óptica</title>
+<meta name="description" content="Cibernet, provedor de internet fibra óptica. Planos de 100 a 600 Mbps, conexão 24 horas e garantia de velocidade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- linhas de fibra decorativas no fundo -->
+<div class="fiber-bg" aria-hidden="true">
+  <svg viewBox="0 0 1440 900" preserveAspectRatio="none">
+    <path class="fiber-line f1" d="M-100,120 C300,60 500,260 900,140 S1500,40 1600,160"/>
+    <path class="fiber-line f2" d="M-100,420 C350,500 650,260 1000,420 S1450,560 1600,440"/>
+    <path class="fiber-line f3" d="M-100,700 C300,640 700,820 1000,700 S1500,600 1600,720"/>
+  </svg>
+</div>
+
+<header class="site-header" id="topo">
+  <div class="wrap header-row">
+    <a href="#topo" class="brand">
+      <span class="brand-mark">CIBER<span class="brand-net">NET</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#planos">Planos</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#contato">Contato</a>
+      <a href="#cadastro" class="nav-cta">Contratar</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Fibra óptica ponta a ponta</p>
+        <h1>Internet que chega rápido<br> e não sai do lugar.</h1>
+        <p class="hero-sub">A Cibernet leva fibra óptica direto até sua casa, com conexão estável 24 horas por dia e velocidade garantida em contrato — sem letra miúda.</p>
+        <div class="hero-actions">
+          <a href="#planos" class="btn btn-gold">Ver planos</a>
+          <a href="https://wa.me/558387510250?text=Ol%C3%A1%2C%20quero%20conhecer%20os%20planos%20da%20Cibernet" target="_blank" rel="noopener" class="btn btn-ghost">Falar no WhatsApp</a>
+        </div>
+        <ul class="hero-stats">
+          <li><span class="num">24h</span><span class="label">conexão ativa</span></li>
+          <li><span class="num">100%</span><span class="label">fibra óptica</span></li>
+          <li><span class="num">6</span><span class="label">planos, de 100 a 600 Mbps</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 420 420" class="pulse-svg">
+          <circle class="ring ring-1" cx="210" cy="210" r="70"/>
+          <circle class="ring ring-2" cx="210" cy="210" r="120"/>
+          <circle class="ring ring-3" cx="210" cy="210" r="170"/>
+          <path class="strand strand-a" d="M20,300 C120,260 160,180 210,210 S320,90 400,60"/>
+          <path class="strand strand-b" d="M20,140 C120,180 160,240 210,210 S320,340 400,370"/>
+          <circle class="pulse pa" r="5"><animateMotion dur="3.2s" repeatCount="indefinite" path="M20,300 C120,260 160,180 210,210 S320,90 400,60"/></circle>
+          <circle class="pulse pb" r="5"><animateMotion dur="4s" repeatCount="indefinite" begin="1s" path="M20,140 C120,180 160,240 210,210 S320,340 400,370"/></circle>
+          <circle class="core" cx="210" cy="210" r="34"/>
+          <text x="210" y="205" class="core-num" text-anchor="middle">Mbps</text>
+          <text x="210" y="225" class="core-sub" text-anchor="middle">fibra</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section class="beneficios" id="beneficios">
+    <div class="wrap">
+      <h2>O que vem em todo plano</h2>
+      <p class="section-sub">Sem exceção, sem pegadinha: todo cliente Cibernet tem direito ao mesmo padrão de qualidade.</p>
+      <div class="beneficios-grid">
+        <article class="beneficio-card">
+          <div class="ico">◉</div>
+          <h3>Acesso por fibra óptica</h3>
+          <p>Sinal 100% fibra até a sua porta, sem perda de qualidade pelo caminho.</p>
+        </article>
+        <article class="beneficio-card">
+          <div class="ico">◷</div>
+          <h3>Conexão 24 horas</h3>
+          <p>Sua internet ativa o dia inteiro, todos os dias, sem horário pra cair.</p>
+        </article>
+        <article class="beneficio-card">
+          <div class="ico">⇡</div>
+          <h3>Garantia de velocidade</h3>
+          <p>A velocidade contratada é a velocidade entregue, com monitoramento constante.</p>
+        </article>
+        <article class="beneficio-card">
+          <div class="ico">▭</div>
+          <h3>Roteador AC em comodato</h3>
+          <p>Equipamento incluso enquanto você for cliente, sem custo de compra.</p>
+        </article>
+        <article class="beneficio-card">
+          <div class="ico">✎</div>
+          <h3>Contrato de 12 meses</h3>
+          <p>Condições claras, fixadas por um ano, sem reajuste surpresa.</p>
+        </article>
+        <article class="beneficio-card">
+          <div class="ico">☎</div>
+          <h3>Suporte direto</h3>
+          <p>Atendimento por e-mail e WhatsApp, com gente de verdade do outro lado.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section class="planos" id="planos">
+    <div class="wrap">
+      <h2>Escolha a sua velocidade</h2>
+      <p class="section-sub">Todos os planos incluem fibra óptica, conexão 24h, garantia de velocidade, roteador AC em comodato e contrato de 12 meses.</p>
+
+      <div class="planos-grid">
+
+        <article class="plano-card" data-plano="100">
+          <div class="plano-top">
+            <span class="plano-speed"><span class="plano-num">100</span>Mbps</span>
+            <div class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <ul class="plano-feats">
+            <li>Acesso por fibra óptica</li>
+            <li>Conexão 24 horas</li>
+            <li>Garantia de velocidade</li>
+            <li>Roteador AC em comodato</li>
+            <li>Contrato de 12 meses</li>
+          </ul>
+          <div class="plano-actions">
+            <a class="btn btn-outline" href="https://wa.me/558387510250?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20plano%20de%20100%20Mbps%20da%20Cibernet" target="_blank" rel="noopener">Falar no WhatsApp</a>
+            <a class="btn btn-solid" href="#cadastro" onclick="selecionarPlano('100')">Quero este plano</a>
+          </div>
+        </article>
+
+        <article class="plano-card" data-plano="200">
+          <div class="plano-top">
+            <span class="plano-speed"><span class="plano-num">200</span>Mbps</span>
+            <div class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <ul class="plano-feats">
+            <li>Acesso por fibra óptica</li>
+            <li>Conexão 24 horas</li>
+            <li>Garantia de velocidade</li>
+            <li>Roteador AC em comodato</li>
+            <li>Contrato de 12 meses</li>
+          </ul>
+          <div class="plano-actions">
+            <a class="btn btn-outline" href="https://wa.me/558387510250?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20plano%20de%20200%20Mbps%20da%20Cibernet" target="_blank" rel="noopener">Falar no WhatsApp</a>
+            <a class="btn btn-solid" href="#cadastro" onclick="selecionarPlano('200')">Quero este plano</a>
+          </div>
+        </article>
+
+        <article class="plano-card destaque" data-plano="300">
+          <span class="tag-popular">Mais escolhido</span>
+          <div class="plano-top">
+            <span class="plano-speed"><span class="plano-num">300</span>Mbps</span>
+            <div class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <ul class="plano-feats">
+            <li>Acesso por fibra óptica</li>
+            <li>Conexão 24 horas</li>
+            <li>Garantia de velocidade</li>
+            <li>Roteador AC em comodato</li>
+            <li>Contrato de 12 meses</li>
+          </ul>
+          <div class="plano-actions">
+            <a class="btn btn-outline" href="https://wa.me/558387510250?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20plano%20de%20300%20Mbps%20da%20Cibernet" target="_blank" rel="noopener">Falar no WhatsApp</a>
+            <a class="btn btn-solid" href="#cadastro" onclick="selecionarPlano('300')">Quero este plano</a>
+          </div>
+        </article>
+
+        <article class="plano-card" data-plano="400">
+          <div class="plano-top">
+            <span class="plano-speed"><span class="plano-num">400</span>Mbps</span>
+            <div class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <ul class="plano-feats">
+            <li>Acesso por fibra óptica</li>
+            <li>Conexão 24 horas</li>
+            <li>Garantia de velocidade</li>
+            <li>Roteador AC em comodato</li>
+            <li>Contrato de 12 meses</li>
+          </ul>
+          <div class="plano-actions">
+            <a class="btn btn-outline" href="https://wa.me/558387510250?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20plano%20de%20400%20Mbps%20da%20Cibernet" target="_blank" rel="noopener">Falar no WhatsApp</a>
+            <a class="btn btn-solid" href="#cadastro" onclick="selecionarPlano('400')">Quero este plano</a>
+          </div>
+        </article>
+
+        <article class="plano-card" data-plano="500">
+          <div class="plano-top">
+            <span class="plano-speed"><span class="plano-num">500</span>Mbps</span>
+            <div class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <ul class="plano-feats">
+            <li>Acesso por fibra óptica</li>
+            <li>Conexão 24 horas</li>
+            <li>Garantia de velocidade</li>
+            <li>Roteador AC em comodato</li>
+            <li>Contrato de 12 meses</li>
+          </ul>
+          <div class="plano-actions">
+            <a class="btn btn-outline" href="https://wa.me/558387510250?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20plano%20de%20500%20Mbps%20da%20Cibernet" target="_blank" rel="noopener">Falar no WhatsApp</a>
+            <a class="btn btn-solid" href="#cadastro" onclick="selecionarPlano('500')">Quero este plano</a>
+          </div>
+        </article>
+
+        <article class="plano-card top" data-plano="600">
+          <div class="plano-top">
+            <span class="plano-speed"><span class="plano-num">600</span>Mbps</span>
+            <div class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <ul class="plano-feats">
+            <li>Acesso por fibra óptica</li>
+            <li>Conexão 24 horas</li>
+            <li>Garantia de velocidade</li>
+            <li>Roteador AC em comodato</li>
+            <li>Contrato de 12 meses</li>
+          </ul>
+          <div class="plano-actions">
+            <a class="btn btn-outline" href="https://wa.me/558387510250?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20plano%20de%20600%20Mbps%20da%20Cibernet" target="_blank" rel="noopener">Falar no WhatsApp</a>
+            <a class="btn btn-solid" href="#cadastro" onclick="selecionarPlano('600')">Quero este plano</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+    <div class="wrap contato-grid">
+      <div class="contato-copy">
+        <h2>Precisa falar com a gente?</h2>
+        <p class="section-sub">Suporte técnico, dúvidas sobre planos ou segunda via — escolha o canal que preferir.</p>
+      </div>
+      <div class="contato-cards">
+        <a class="contato-card" href="mailto:suporte@cibernetpb.com.br">
+          <div class="ico">✉</div>
+          <div>
+            <h3>E-mail</h3>
+            <p>suporte@cibernetpb.com.br</p>
+          </div>
+        </a>
+        <a class="contato-card" href="https://wa.me/558387510250" target="_blank" rel="noopener">
+          <div class="ico">☏</div>
+          <div>
+            <h3>WhatsApp</h3>
+            <p>+55 83 8751-0250</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CADASTRO -->
+  <section class="cadastro" id="cadastro">
+    <div class="wrap">
+      <h2>Contrate seu plano</h2>
+      <p class="section-sub">Se você deseja adquirir um dos nossos planos, preencha os campos abaixo com seus dados pessoais e depois clique em <strong>Cadastrar</strong>.</p>
+
+      <form id="formCadastro" class="form-card" novalidate>
+
+        <fieldset class="form-block">
+          <legend>Escolha do plano</legend>
+          <div class="field">
+            <label for="planoAcesso">Plano de acesso</label>
+            <select id="planoAcesso" name="planoAcesso" required>
+              <option value="" disabled selected>Selecione um plano</option>
+              <option value="100">100 Mbps</option>
+              <option value="200">200 Mbps</option>
+              <option value="300">300 Mbps</option>
+              <option value="400">400 Mbps</option>
+              <option value="500">500 Mbps</option>
+              <option value="600">600 Mbps</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Dia de vencimento</label>
+            <div class="radio-row">
+              <label class="radio-pill"><input type="radio" name="vencimento" value="05" required> Todo dia 05</label>
+              <label class="radio-pill"><input type="radio" name="vencimento" value="10"> Todo dia 10</label>
+              <label class="radio-pill"><input type="radio" name="vencimento" value="15"> Todo dia 15</label>
+              <label class="radio-pill"><input type="radio" name="vencimento" value="20"> Todo dia 20</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-block">
+          <legend>Acesso à área do cliente</legend>
+          <div class="field-row">
+            <div class="field">
+              <label for="login">Login</label>
+              <input type="text" id="login" name="login" autocomplete="username" required>
+            </div>
+            <div class="field">
+              <label for="senha">Senha</label>
+              <input type="password" id="senha" name="senha" autocomplete="new-password" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-block">
+          <legend>Dados pessoais</legend>
+          <div class="field">
+            <label for="nome">Seu nome</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="field">
+            <label for="email">Seu e-mail</label>
+            <input type="email" id="email" name="email" required>
+            <span class="hint">Nunca vamos compartilhar seu e-mail com ninguém.</span>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="cpfCnpj">CPF/CNPJ</label>
+              <input type="text" id="cpfCnpj" name="cpfCnpj" inputmode="numeric" placeholder="Somente números" required>
+            </div>
+            <div class="field">
+              <label for="rg">RG</label>
+              <input type="text" id="rg" name="rg" required>
+            </div>
+            <div class="field">
+              <label for="dataNasc">Data de nascimento</label>
+              <input type="date" id="dataNasc" name="dataNasc" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-block">
+          <legend>Endereço</legend>
+          <div class="field-row">
+            <div class="field">
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" name="cep" inputmode="numeric" placeholder="Somente números" required>
+              <span class="hint" id="cepStatus"></span>
+            </div>
+            <div class="field field-grow">
+              <label for="endereco">Endereço</label>
+              <input type="text" id="endereco" name="endereco" required>
+            </div>
+            <div class="field field-small">
+              <label for="numero">Número</label>
+              <input type="text" id="numero" name="numero" required>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="complemento">Complemento</label>
+              <input type="text" id="complemento" name="complemento">
+            </div>
+            <div class="field">
+              <label for="bairro">Bairro</label>
+              <input type="text" id="bairro" name="bairro" required>
+            </div>
+            <div class="field">
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" name="cidade" required>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="estado">Estado</label>
+              <select id="estado" name="estado" required>
+                <option value="" disabled selected>Selecione</option>
+                <option>Acre</option>
+                <option>Alagoas</option>
+                <option>Amapá</option>
+                <option>Amazonas</option>
+                <option>Bahia</option>
+                <option>Ceará</option>
+                <option>Distrito Federal</option>
+                <option>Espírito Santo</option>
+                <option>Goiás</option>
+                <option>Maranhão</option>
+                <option>Mato Grosso</option>
+                <option>Mato Grosso do Sul</option>
+                <option>Minas Gerais</option>
+                <option>Pará</option>
+                <option>Paraíba</option>
+                <option>Paraná</option>
+                <option>Pernambuco</option>
+                <option>Piauí</option>
+                <option>Rio de Janeiro</option>
+                <option>Rio Grande do Norte</option>
+                <option>Rio Grande do Sul</option>
+                <option>Rondônia</option>
+                <option>Roraima</option>
+                <option>Santa Catarina</option>
+                <option>São Paulo</option>
+                <option>Sergipe</option>
+                <option>Tocantins</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone">
+            </div>
+            <div class="field">
+              <label for="celular">Celular</label>
+              <input type="tel" id="celular" name="celular" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-block">
+          <legend>Outros</legend>
+          <div class="field">
+            <label for="codigo">Código de indicação (caso tenha um)</label>
+            <input type="text" id="codigo" name="codigo" placeholder="Opcional">
+          </div>
+        </fieldset>
+
+        <div class="form-footer">
+          <p class="form-msg" id="formMsg" role="status"></p>
+          <button type="submit" class="btn btn-gold btn-large">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span class="brand-mark small">CIBER<span class="brand-net">NET</span></span>
+    <p>suporte@cibernetpb.com.br · +55 83 8751-0250</p>
+    <p class="copy">© <span id="anoAtual"></span> Cibernet. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
