@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cibernet — Painel administrativo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+
+<!-- TELA DE LOGIN -->
+<div class="admin-login" id="loginScreen">
+  <form id="formLogin" class="login-card">
+    <span class="brand-mark">CIBER<span class="brand-net">NET</span></span>
+    <h1>Painel administrativo</h1>
+    <p class="section-sub">Área restrita. Digite a senha de acesso para continuar.</p>
+    <div class="field">
+      <label for="senhaAdmin">Senha</label>
+      <input type="password" id="senhaAdmin" required autofocus>
+    </div>
+    <p class="form-msg erro" id="loginMsg" role="status"></p>
+    <button type="submit" class="btn btn-gold btn-large">Entrar</button>
+  </form>
+</div>
+
+<!-- PAINEL -->
+<div class="admin-dashboard" id="dashboard" hidden>
+
+  <header class="admin-header">
+    <div class="wrap admin-header-row">
+      <span class="brand-mark">CIBER<span class="brand-net">NET</span> <small>admin</small></span>
+      <div class="admin-header-actions">
+        <a href="index.html" class="btn btn-ghost">Ver site</a>
+        <button class="btn btn-outline" id="btnSair">Sair</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap admin-main">
+
+    <nav class="admin-tabs" role="tablist">
+      <button class="admin-tab active" data-tab="clientes" role="tab" aria-selected="true">Gerenciar clientes</button>
+      <button class="admin-tab" data-tab="chamados" role="tab" aria-selected="false">Chamados</button>
+    </nav>
+
+    <!-- ABA CLIENTES -->
+    <section class="admin-panel active" id="painelClientes">
+
+      <div class="admin-panel-head">
+        <div>
+          <h2>Clientes</h2>
+          <p class="section-sub">Clientes cadastrados pelo site aparecem aqui automaticamente. Você também pode adicionar clientes manualmente.</p>
+        </div>
+        <button class="btn btn-gold" id="btnNovoCliente">+ Adicionar cliente</button>
+      </div>
+
+      <input type="search" id="buscaCliente" class="admin-search" placeholder="Buscar por nome, CPF ou telefone...">
+
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>CPF/CNPJ</th>
+              <th>Telefone</th>
+              <th>Endereço</th>
+              <th>Plano</th>
+              <th>IP</th>
+              <th>Origem</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyClientes"></tbody>
+        </table>
+        <p class="admin-empty" id="clientesVazio">Nenhum cliente cadastrado ainda.</p>
+      </div>
+    </section>
+
+    <!-- ABA CHAMADOS -->
+    <section class="admin-panel" id="painelChamados">
+      <div class="admin-panel-head">
+        <div>
+          <h2>Chamados</h2>
+          <p class="section-sub">Chamados abertos pelos clientes na página pública. Atualize o status conforme for atendendo.</p>
+        </div>
+      </div>
+
+      <input type="search" id="buscaChamado" class="admin-search" placeholder="Buscar por nome, CPF ou protocolo...">
+
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Protocolo</th>
+              <th>Nome</th>
+              <th>CPF</th>
+              <th>Telefone</th>
+              <th>Endereço</th>
+              <th>Motivo</th>
+              <th>Status</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyChamados"></tbody>
+        </table>
+        <p class="admin-empty" id="chamadosVazio">Nenhum chamado aberto ainda.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- MODAL: adicionar/editar cliente -->
+<div class="admin-modal" id="modalCliente" hidden>
+  <form class="modal-card" id="formCliente">
+    <h2 id="modalTitulo">Adicionar cliente</h2>
+    <input type="hidden" id="clienteId">
+    <div class="field">
+      <label for="clNome">Nome</label>
+      <input type="text" id="clNome" required>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label for="clCpf">CPF/CNPJ</label>
+        <input type="text" id="clCpf" required>
+      </div>
+      <div class="field">
+        <label for="clTelefone">Telefone</label>
+        <input type="tel" id="clTelefone" required>
+      </div>
+    </div>
+    <div class="field">
+      <label for="clEndereco">Endereço</label>
+      <input type="text" id="clEndereco" required>
+    </div>
+    <div class="field">
+      <label for="clIp">IP</label>
+      <input type="text" id="clIp" placeholder="Ex: 192.168.0.10">
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-ghost" id="btnCancelarModal">Cancelar</button>
+      <button type="submit" class="btn btn-gold">Salvar</button>
+    </div>
+  </form>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

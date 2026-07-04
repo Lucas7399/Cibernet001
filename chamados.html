@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cibernet — Abrir chamado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="fiber-bg" aria-hidden="true">
+  <svg viewBox="0 0 1440 900" preserveAspectRatio="none">
+    <path class="fiber-line f1" d="M-100,120 C300,60 500,260 900,140 S1500,40 1600,160"/>
+    <path class="fiber-line f2" d="M-100,420 C350,500 650,260 1000,420 S1450,560 1600,440"/>
+    <path class="fiber-line f3" d="M-100,700 C300,640 700,820 1000,700 S1500,600 1600,720"/>
+  </svg>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">CIBER<span class="brand-net">NET</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="index.html#planos">Planos</a>
+      <a href="index.html#beneficios">Benefícios</a>
+      <a href="index.html#contato">Contato</a>
+      <a href="chamados.html" class="nav-cta">Chamados</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="chamados-hero">
+    <div class="wrap">
+      <p class="eyebrow">Suporte Cibernet</p>
+      <h1>Abrir um chamado</h1>
+      <p class="section-sub">Conte pra gente o que está acontecendo. Preencha os dados abaixo e registramos seu chamado com um número de protocolo.</p>
+    </div>
+  </section>
+
+  <section class="chamados-form-section">
+    <div class="wrap chamados-grid">
+
+      <form id="formChamado" class="form-card" novalidate>
+        <fieldset class="form-block">
+          <legend>Seus dados</legend>
+          <div class="field">
+            <label for="chNome">Nome completo</label>
+            <input type="text" id="chNome" name="nome" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="chCpf">CPF</label>
+              <input type="text" id="chCpf" name="cpf" inputmode="numeric" placeholder="Somente números" required>
+            </div>
+            <div class="field">
+              <label for="chTelefone">Telefone</label>
+              <input type="tel" id="chTelefone" name="telefone" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="chEndereco">Endereço</label>
+            <input type="text" id="chEndereco" name="endereco" placeholder="Rua, número, bairro, cidade" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-block">
+          <legend>O chamado</legend>
+          <div class="field">
+            <label for="chMotivo">Motivo do chamado</label>
+            <textarea id="chMotivo" name="motivo" rows="5" placeholder="Descreva o que está acontecendo" required></textarea>
+          </div>
+        </fieldset>
+
+        <div class="form-footer">
+          <p class="form-msg" id="chMsg" role="status"></p>
+          <button type="submit" class="btn btn-gold btn-large">Abrir chamado</button>
+        </div>
+      </form>
+
+      <aside class="chamados-info">
+        <h3>Prefere outro canal?</h3>
+        <a class="contato-card" href="mailto:suporte@cibernetpb.com.br">
+          <div class="ico">✉</div>
+          <div><h3>E-mail</h3><p>suporte@cibernetpb.com.br</p></div>
+        </a>
+        <a class="contato-card" href="https://wa.me/558387510250" target="_blank" rel="noopener">
+          <div class="ico">☏</div>
+          <div><h3>WhatsApp</h3><p>+55 83 8751-0250</p></div>
+        </a>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span class="brand-mark small">CIBER<span class="brand-net">NET</span></span>
+    <p>suporte@cibernetpb.com.br · +55 83 8751-0250</p>
+    <p class="copy">© <span id="anoAtual"></span> Cibernet. Todos os direitos reservados.</p>
+    <a href="admin.html" class="admin-link">Acesso administrativo</a>
+  </div>
+</footer>
+
+<script src="chamados.js"></script>
+</body>
+</html>
